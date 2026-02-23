@@ -1,19 +1,10 @@
 {
   "name": "my-project",
   "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "npx tailwindcss -i ./src/input.css -o ./dist/output.css --minify"
   },
   "devDependencies": {
-    "typescript": "~5.9.3",
-    "vite": "^7.3.1"
-  },
-  "dependencies": {
-    "@tailwindcss/cli": "^4.2.0",
     "tailwindcss": "^4.2.0"
   }
 }
